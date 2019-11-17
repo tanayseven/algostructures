@@ -7,3 +7,7 @@ format:
 
 test:
 	go test .
+
+
+testVerbose:
+	go test . -v
