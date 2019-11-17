@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func FindInArray(arr []int, key int) int {
+func LinearSearch(arr []int, key int) int {
 	index := -1
 	for i := 0; i < len(arr); i++ {
 		if key == arr[i] {
@@ -14,5 +14,5 @@ func FindInArray(arr []int, key int) int {
 }
 
 func main() {
-	fmt.Println("Hello World")
+	fmt.Println(fmt.Sprintf("%d", []int{1, 2, 3, 4, 5}))
 }
