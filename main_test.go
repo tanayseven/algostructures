@@ -46,3 +46,15 @@ func TestSearchArray(t *testing.T) {
 		})
 	}
 }
+
+func TestParallelSearchArray(t *testing.T) {
+	for _, tt := range GenerateSearchTests() {
+		t.Run(FormattedTestName(tt), func(t *testing.T) {
+			actualIndex := LinearSearchParallel(tt.array, tt.searchKey)
+			if tt.expectedIndex != actualIndex {
+				t.Errorf("Got the wrong key " + fmt.Sprintf("%d", actualIndex))
+			}
+		})
+	}
+
+}
