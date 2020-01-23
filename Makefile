@@ -6,7 +6,7 @@ format:
 	go fmt
 
 test:
-	go test .
+	go test ./...
 
 
 testVerbose:
